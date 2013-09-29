@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name ="keywords" content="Image Retrieval, Deep Neural Network, Deep learning, Convolutional Neural Network, CNN, Yinan Yu" />
+<link rel="stylesheet" type="text/css" href="mycss.css" />
+<font size="2" face="Verdana">
+<title>Examples</title>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:1124px;
+	height:115px;
+	z-index:1;
+}
+.results-table {
+  border-collapse: collapse;
+  border: none;
+}
+
+.results-table th {
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  font-size: 1em;
+  font-family: Verdana;
+}
+
+.results-table th.row {
+  padding-right: 0.8em;
+  border: none;
+  text-align: right;
+}
+
+.results-table td {
+  padding-top: 0.25em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  font-size: 1em;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.results-table caption {
+  border-top: 1px solid #666;
+  caption-side: bottom;
+  font-size: 1em;
+  font-family: Verdana;
+  /*font-style: italic;*/
+  text-align: left;
+  padding: 0.3em 0;
+  padding-bottom: 2em;
+}
+</style>
+</head>
+<body>
+<h1 align='center'>Image Retrieval via Deep Neural Network</h1>
+<p align="center"><a href="index.htm">Yinan Yu</a>@IDL </p>
+<hr />
+<p>This page shows some results of visual similarity image retrieval via Deep Neural Network. It is not a toy, but our online commercial service (<a href="http://stu.baidu.com">http://stu.baidu.com</a>, click "推荐相似图片"). The back-end database contains about 1 billion images. The response time of each query is about 0.7 sec (600 images). </p>
+<p>Content-based Image Retrieval (CBIR) is an old and so old topic. Given a query image, we extract its representation via Deep Neural Network (DNN) and use it to retrieve the most similar images. The architecture is robust to illumination, color, style, coarse structure, main contains, texture, etc.</p>
+<p>Fortunately, it works, but no one knows why. Please don't expect too much about the result</p>
+<p>Try the query images, and have a fun.</p>
+<div>
+	<table border="1">
+		<tr>
+			<th>Query image</th>
+			<th>Retrieval</th>
+		</tr>
+		<tr>
+			<td><img src="./images/ferris_wheel.jpg" height=260 alt="Ferris wheel" /></td>
+			<td><img src="./images/ferris_wheels.jpg" height=400 alt="Ferris wheels" /></td>
+		</tr>
+	</table>
+	<p align="left">More results</p>
+	<table border="1">
+		<tr>
+			<th>Query image</th>
+			<th>Ours</th>
+			<th>Google's result</th>
+		</tr>
+		<tr>
+			<td><img src="./images/source_1.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_result.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_2.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_2.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_2.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_3.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_3.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_3.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_4.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_4.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_4.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_5.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_5.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_5.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_6.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_6.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_6.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_7.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_7.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_7.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_8.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_8.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_8.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_9.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_9.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_9.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_10.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_10.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_10.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_11.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_11.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_11.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_12.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_12.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_12.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_13.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_13.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_13.png" width=500 alt="google's result" /></td>
+		</tr>
+		<tr>
+			<td><img src="./images/source_14.jpg" height=200 alt="source images" /></td>
+			<td><img src="./images/ours_14.png" width=500 alt="ours" /></td>
+			<td><img src="./images/google_14.png" width=500 alt="google's result" /></td>
+		</tr>
+
+	</table>
+<p align='left'>Actually, the results which are worse are not shown here, please don't believe that the tech is so NB that it indeed understands image. It is far away from possible.</p>
+<p align='left'>Furthermore, I'm satisfied with the sixth result : ) You know what I mean. </p>
+</div>
+</body>
+</html>
